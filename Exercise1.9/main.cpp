@@ -17,5 +17,12 @@ int main(int argc, const char * argv[]) {
     }
     
     std::cout<< "The sum of 50 to 100 inclusively is " << sum << std::endl;
+    
+    int numToPrint = 10;
+    std::cout<< "Counting down from 10 to 0!" << std::endl;
+    while (numToPrint >= 0) {
+        std::cout << numToPrint << std::endl;
+        numToPrint--;
+    }
     return 0;
 }
