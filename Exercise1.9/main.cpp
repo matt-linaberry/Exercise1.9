@@ -24,5 +24,21 @@ int main(int argc, const char * argv[]) {
         std::cout << numToPrint << std::endl;
         numToPrint--;
     }
+    
+    std::cout << "Tell me two numbers: " << std::endl;
+    int firstNum, secondNum;
+    std::cin >> firstNum >> secondNum;
+    if (firstNum < secondNum) {
+        while (firstNum <= secondNum) {
+            std::cout << firstNum << std::endl;
+            firstNum++;
+        }
+    }
+    else {
+        while (secondNum <= firstNum) {
+            std::cout << secondNum << std::endl;
+            secondNum++;
+        }
+    }
     return 0;
 }
