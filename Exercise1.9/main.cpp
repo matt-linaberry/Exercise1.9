@@ -10,34 +10,28 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    int num = 50, sum = 0;
-    while (num <= 100) {
+    int sum = 0;
+    for (int num = 50; num <= 100; num++) {
         sum += num;
-        num++;
     }
-    
     std::cout<< "The sum of 50 to 100 inclusively is " << sum << std::endl;
     
-    int numToPrint = 10;
     std::cout<< "Counting down from 10 to 0!" << std::endl;
-    while (numToPrint >= 0) {
+    for (int numToPrint = 10; numToPrint >= 0; numToPrint--) {
         std::cout << numToPrint << std::endl;
-        numToPrint--;
     }
     
     std::cout << "Tell me two numbers: " << std::endl;
     int firstNum, secondNum;
     std::cin >> firstNum >> secondNum;
     if (firstNum < secondNum) {
-        while (firstNum <= secondNum) {
+        for (;firstNum <= secondNum;firstNum++) {
             std::cout << firstNum << std::endl;
-            firstNum++;
         }
     }
     else {
-        while (secondNum <= firstNum) {
+        for ( ;secondNum <= firstNum; secondNum++) {
             std::cout << secondNum << std::endl;
-            secondNum++;
         }
     }
     return 0;
