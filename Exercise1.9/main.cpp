@@ -10,6 +10,12 @@
 
 int main(int argc, const char * argv[]) {
     // insert code here...
-    std::cout << "Hello, World!\n";
+    int num = 50, sum = 0;
+    while (num <= 100) {
+        sum += num;
+        num++;
+    }
+    
+    std::cout<< "The sum of 50 to 100 inclusively is " << sum << std::endl;
     return 0;
 }
